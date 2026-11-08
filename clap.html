@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CLAP — SvaraScience</title>
+<meta name="description" content="CLAP: Chunk, Lock, Arrange, Perform. A free memorization method built on Carnatic rhythm cycles.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html"><img src="assets/img/logo.svg" alt="SvaraScience — The Rhythm Brain"></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="clap.html" aria-current="page">CLAP</a>
+      <a href="research.html">Research</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-dark" href="mailto:hello@svarascience.org">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="container page-header stack">
+  <p class="kicker">The method</p>
+  <h1>CLAP: Chunk, Lock, Arrange, Perform</h1>
+  <p class="lead">A memorization method that puts information onto a Carnatic rhythm cycle instead of a melody. No instrument, no singing, no music training needed. Just rhythm. Free for anyone to use.</p>
+</section>
+
+<section class="container" style="padding-bottom:80px">
+  <div class="steps">
+    <div class="step"><span class="letter" aria-hidden="true">C</span><div class="what"><strong>Chunk</strong><span>Break material into small groups of 3–5 items.</span></div><div class="example">Pi becomes <b>314 · 159 · 265 · 358</b> instead of one long string.</div></div>
+    <div class="step"><span class="letter" aria-hidden="true">L</span><div class="what"><strong>Lock</strong><span>Set each group to one rhythm cycle.</span></div><div class="example">Each group gets its own beat, so the rhythm holds its place in line.</div></div>
+    <div class="step"><span class="letter" aria-hidden="true">A</span><div class="what"><strong>Arrange</strong><span>Put the hardest item on the strongest beat.</span></div><div class="example">The group you keep forgetting goes on sam, the first beat, where every cycle lands.</div></div>
+    <div class="step"><span class="letter" aria-hidden="true">P</span><div class="what"><strong>Perform</strong><span>Say it aloud with the beat.</span></div><div class="example">Clap or tap the cycle and speak each group on its beat.</div></div>
+  </div>
+</section>
+
+<section class="section section--navy">
+  <div class="container split" style="justify-content:center">
+    <div class="narrow stack" style="max-width:480px">
+      <h2>Try CLAP in 30 seconds</h2>
+      <p>Tap once per beat. Each beat locks three digits of Pi in place. After one full cycle, hide the digits and say them back with the rhythm.</p>
+    </div>
+    <div class="wide">
+<div class="tala">
+  <div class="tala-dial" id="tala-dial">
+    <div class="tala-hub" aria-hidden="true"><strong id="tala-big">Ready</strong><span id="tala-small">Tap to start</span></div>
+  </div>
+  <div class="btn-row" style="justify-content:center">
+    <button type="button" class="btn btn-primary" id="tala-tap">Tap the beat</button>
+    <button type="button" class="btn btn-outline" id="tala-hide" aria-pressed="false">Hide digits</button>
+    <button type="button" class="btn btn-quiet" id="tala-reset">Start over</button>
+  </div>
+  <p class="tala-trail" id="tala-trail" aria-live="polite"></p>
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid grid--wide">
+    <div class="card"><h3>What CLAP is built for</h3><p>Ordered sequences: digits, lists, and steps that have to stay in order. That is where rhythm's fixed slots fit most naturally.</p></div>
+    <div class="card"><h3>Open questions</h3><p>Does it work for words or full paragraphs? Does it help people understand and use material, not just repeat it? These are still to be tested.</p></div>
+    <div class="card"><h3>Honest status</h3><p>CLAP worked for one person, once. Whether the rhythm does the work is exactly what the research is testing. <a href="research.html" style="font-weight:600">See the study</a></p></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img src="assets/img/logo-on-dark.svg" alt="SvaraScience — The Rhythm Brain">
+    <div class="stack">
+      <a href="mailto:hello@svarascience.org">hello@svarascience.org</a>
+      <span>A student-led project by Ajay Siva Vaithiyanatha Siva, New Jersey.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/tala.js"></script>
+</body>
+</html>
